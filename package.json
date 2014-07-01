@@ -1,6 +1,6 @@
 {
   "name": "example-adventure",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "example of using adventure to make nodeschool challenges",
   "bin": {
     "example-adventure": "runner.js"
