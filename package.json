@@ -1,0 +1,14 @@
+{
+  "name": "example-adventure",
+  "version": "1.0.0",
+  "description": "example of using adventure to make nodeschool challenges",
+  "bin": {
+    "example-adventure": "runner.js"
+  },
+  "author": "YOUR NAME HERE",
+  "license": "MIT",
+  "dependencies": {
+    "adventure": "^2.2.0",
+    "adventure-verify": "^2.1.1"
+  }
+}
