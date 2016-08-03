@@ -1,7 +1,4 @@
-Write a program that exports a string containing a sound a robot would be likely
-to make. Here's some boilerplate code you can use to get started:
-
-  module.exports = 'your sound goes here...'
+Write a program that exports a compiled smart contract that has a method "hello".
 
 Save that code into a file, YOUR_PROGRAM.js (you can name it whatever you like)
 and then:

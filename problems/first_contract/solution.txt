@@ -1,5 +1,9 @@
 Here's the reference solution, if you're interested:
 
-  module.exports = 'beep boop'
+contract RoboBro {
+  function hello() returns (string) {
+    return 'haay wuurl';
+  }
+}
 
 But your solution is probably good too.
