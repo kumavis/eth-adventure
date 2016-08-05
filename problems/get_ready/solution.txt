@@ -1,1 +1,2 @@
-Everything looks good! Let's get started.
+Everything looks good! Let's get started. 
+Run `$ADVENTURE_COMMAND` to start writing your first contract.
