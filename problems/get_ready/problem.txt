@@ -1,0 +1,17 @@
+Let's get started! You need to:
+  
+  * Create a dir for the project files for this
+
+  ```
+  mkdir eth-fun
+  cd eth-fun
+  ```
+
+  * Install "solc" from npm
+
+  ```
+  npm install solc
+  ```
+
+  Use `$ADVENTURE_COMMAND verify` to verify your environment.
+

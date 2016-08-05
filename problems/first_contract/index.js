@@ -7,15 +7,21 @@ exports.solution = fs.createReadStream(__dirname + '/solution.txt')
 
 exports.verify = verify({ modeReset: true }, function (args, t) {
   var result = require(path.resolve(args[0]))
+
+  if (result && result.errors) {
+    result.errors.map((err)=>{
+      t.fail(`Compile Error - ${err}`)
+    })
+  }
   t.ok(result && result.contracts, 'you exported a compiled contract')
 
   var contracts = result.contracts || {}
-  var contractAbi = JSON.parse(contracts.RoboBro.interface)
+  var contractAbi = JSON.parse(contracts.MyContract.interface)
   var helloMethod = contractAbi.find((method) => method.name === 'hello')
-  t.ok(helloMethod, 'contract "RoboBro" has a method named "hello"')
+  t.ok(helloMethod, 'contract "MyContract" has a method named "hello"')
 
-  t.equal(helloMethod.outputs.length, 1, 'contract "RoboBro" method "hello" has one return value')
-  t.equal(helloMethod.outputs[0].type, 'string', 'contract "RoboBro" method "hello" has return type "string"')
+  t.equal(helloMethod.outputs.length, 1, 'contract "MyContract" method "hello" has one return value')
+  t.equal(helloMethod.outputs[0].type, 'string', 'contract "MyContract" method "hello" has return type "string"')
 
   t.end()
 })

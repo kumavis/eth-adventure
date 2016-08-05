@@ -1,6 +1,6 @@
 Here's the reference solution, if you're interested:
 
-contract RoboBro {
+contract MyContract {
   function hello() returns (string) {
     return 'haay wuurl';
   }

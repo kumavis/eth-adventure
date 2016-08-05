@@ -1,8 +1,16 @@
 Write a program that exports a compiled smart contract that has a method "hello".
 
-Save that code into a file, YOUR_PROGRAM.js (you can name it whatever you like)
+You can use a generator to give you a starter template (you can name it whatever you like)
+
+  Use `$ADVENTURE_COMMAND generate sol YOUR_PROGRAM.js`
+  or `$ADVENTURE_COMMAND g sol YOUR_PROGRAM.js`
+  to generate a starter template for solidity code.
+
+Modify that code, so that the smart contract:
+
+  * has a method "hello" that returns a string
+
 and then:
 
   Use `$ADVENTURE_COMMAND verify YOUR_PROGRAM.js` to verify your program.
-  Use `$ADVENTURE_COMMAND run YOUR_PROGRAM.js` to run your program.
 
