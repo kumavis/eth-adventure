@@ -1,13 +1,14 @@
 Let's get started! You need to:
   
-  * Create a dir for the project files for this
+  * Create a directory for your project.
 
   ```
   mkdir eth-fun
   cd eth-fun
+  npm init
   ```
 
-  * Install "solc" from npm
+  * Install "solc" from npm.
 
   ```
   npm install solc
